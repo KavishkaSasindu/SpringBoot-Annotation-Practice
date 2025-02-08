@@ -7,22 +7,22 @@ import org.springframework.stereotype.Component;
 public class Alien {
 
     @Autowired
-    private Laptop laptop;
+    private Computer computer;
 
     public Alien() {
         System.out.println("Alien Object create");
     }
 
     public void code() {
-        laptop.compile();
+        computer.compute();
         System.out.println("Coding...");
     }
 
-    public Laptop getLaptop() {
-        return laptop;
+    public Computer getComputer() {
+        return computer;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public void setComputer(Computer computer) {
+        this.computer = computer;
     }
 }
